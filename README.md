@@ -15,7 +15,7 @@
 
 
 ## 201804
-1. [ajax学习应用](http://haiping313.cn "ajax学习应用")
+1. [ajax学习应用](./201804/ajax.md "ajax学习应用")
 2. promise学习应用
 
 ------------
