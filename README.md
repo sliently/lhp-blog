@@ -16,11 +16,6 @@
 
 ## 201804
 1. [ajax学习应用](./201804/ajax.md "ajax学习应用")
-2. promise学习应用
+2. [js继承](./201804/js继承.md "ajax学习应用")
 
 ------------
-    <html>
-    	<div>
-    		dsds
-    	</div>
-    </html>
