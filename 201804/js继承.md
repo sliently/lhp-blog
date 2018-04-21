@@ -56,6 +56,7 @@ Student.prototype.two = function(){
 谷歌控制台截图如下
 ![1](./img/one.png)
 
+
 下面一种比较简单的 借用构造函数继承（有时候也叫伪造对象和经典继承）但是只能继承构造函数内部的属性，不能继承原型链
 ```javascript
 // 重写Student
@@ -64,7 +65,8 @@ function Student(o,b){
 	this.cat = o
 }
 ```
-![1](./img/two.jpg)
+![1](./img/two.png)
+
 综合以上两者的优缺点，也就有了组合继承
 > 组合继承
 
@@ -88,6 +90,7 @@ console.log(new People('人'), new Student('人', '学生'))
 ```
 如下图
 ![](./img/three.png)
+
 组合继承的缺点就是，无论如何都会调用两次父类，子类型最终会包含父类的全部实例属性，这样是非常耗内存的
 ![](./img/four.png)
 
@@ -116,6 +119,7 @@ console.log(new People('人'), new Student('人', '学生'))
 ```
 如下图
 ![](./img/fifth.png)
+
 >  现在es5继承基本完美了
  
  当然，如果学习过es6的话，在es6中是非常简单的
