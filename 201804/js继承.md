@@ -16,4 +16,4 @@ Person.propotype===new Person().__proto__ //true
 	
 - `prototype`
 	谈这个势必会先了解到方法 也就是`Function`,每一个方法都会有`prototype`这个属性,`prototype`指向原型对象。
-	有一张有趣的图[![辅导费](./img/prototype.jpg)]
+	有一张有趣的图[![辅导费](./img/propotype.jpg)]
