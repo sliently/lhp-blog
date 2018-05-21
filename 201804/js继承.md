@@ -10,9 +10,9 @@
 ```javascript
 function Person(){
 }
-Person.propotype.one=function(){
+Person.prototype.one=function(){
 }
-Person.propotype===new Person().__proto__ //true
+Person.prototype===new Person().__proto__ //true
 ```
 	
 - `prototype`
