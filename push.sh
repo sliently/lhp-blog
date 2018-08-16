@@ -2,7 +2,7 @@
 echo "开始上传"
 rm -rf docs/
 cp -r _book docs/
-echo "请输入commit 信息："
+echo `请输入commit信息`
 read msg
 git add -A
 git commit -m $msg
