@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "开始上传"
-mkdir docs/
+rm -rf docs/*
 cp -r _book/ docs
 echo "请输入commit信息"
 read msg
