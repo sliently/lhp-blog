@@ -89,9 +89,29 @@ model.save();
 
 ##### 添加新数据 create(model,opts)
 
+```js
+await medel.create({})
+```
 
+
+##### 更新数据 update(values, opts)
+```js
+model.update({
+  status: 2
+  },{
+  where:{ id : 100}
+})
+
+```
 ##### 删除记录 destroy(opts)
+```js
+await model.destroy({
+  where: {
+    
+  }
+})
 
+```
 
 ##### 单表操作
 
@@ -112,3 +132,5 @@ model.save();
  let list1=data[0];//返回的第一条数据就是要查询的数据
  let list2=list1.items;//返回子表数据,items是自定义的名称
 ```
+
+##### 查询数据 findAll()
