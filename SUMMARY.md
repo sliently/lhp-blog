@@ -5,7 +5,9 @@
   - [js继承](./201804/js继承.md "js继承")
 * node
   - [sequelize](./node/sequelize.md "sequelize")
-* [面试](./201805/面试.md "面试")
+* 面试
+  - [面试题](./面试/面试题.md "面试题")
+  - [面试总结](./面试/面试.md "面试总结")
 * api
   - [git命令](./api/git命令.md "git命令")
   - [linux命令](./api/linuxApi.md "linux命令")

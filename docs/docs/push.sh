@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "开始上传"
 rm -rf docs/*
-cp -r _book/* docs
+cp -r _book/ docs
 read -p "请输入commit信息:" msg
 git add -A
 git commit -m $msg
