@@ -50,6 +50,7 @@ aPromise.prototype.then = function (onFulfilled, onRejected) {
     },0)
     
 }
+Object.defineProperty
 
 
 function a() {
