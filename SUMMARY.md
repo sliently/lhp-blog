@@ -8,11 +8,13 @@
 * 面试
   - [面试题](./面试/面试题.md "面试题")
   - [面试总结](./面试/面试.md "面试总结")
+* [react](./react/study.md "react")
+* [typescript](./ts/ts.md "typescript")
 * api
   - [git命令](./api/git命令.md "git命令")
   - [linux命令](./api/linuxApi.md "linux命令")
   - [shell命令](./api/shell.md "shell命令")
 * 整理
-  - [节流与防抖](./js/整理.md "节流与防抖")
+  - [js函数实现](./js/整理.md "js函数实现")
 * [vue源码解析](./vue源码/vue1.md)
-  - [双向绑定](./vue源码/vue1.md "节流与防抖")
+  - [双向绑定](./vue源码/vue1.md "双向绑定")
