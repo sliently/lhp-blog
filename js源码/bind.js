@@ -44,3 +44,14 @@ function a(b) {
 all([a, a, a, a, a, a, a, a]).then((data) => {
     console.log(data)
 })
+
+function ClassA(){
+    this.a = 10
+}
+ClassA.prototype={
+
+}
+ClassA.constructor = ClassA
+
+const classA = new ClassA()
+console.log(classA.prototype)
