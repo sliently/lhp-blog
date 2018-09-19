@@ -1,3 +1,5 @@
+//bind实现
+
 Function.prototype.bind = function (that) {
     var self = this
     var slice = Array.prototype.slice
@@ -15,6 +17,14 @@ function a(a, b) {
 }
 // var b = a.bind(obj,10)
 // b(20)
+// 原生bind实现
+Function.prototype.bind2 = function(that){
+    var self = this
+    var slice = Array.prototype.slice
+    var arr = slice.call(arguments, 1)
+    var obj = {}
+}
+
 
 function all(arr) {
     let length = arr.length
