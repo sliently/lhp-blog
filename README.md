@@ -25,4 +25,5 @@
   - [typescript](./ts/ts.md "typescript")
 * 整理
   - [节流与防抖](./js/整理.md "节流与防抖")
+  - [mobx](./js/mobx.md)
 ------------

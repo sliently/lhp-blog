@@ -5,6 +5,7 @@
   - [js继承](./201804/js继承.md "js继承")
   - [js函数实现](./js/整理.md "js函数实现")
   - [图片懒加载](./掘金分享/lazyload.md)
+  - [mobx](./js/mobx.md)
 * [css](./css/说明.md)
   - [one](./css/1.md)
 * js
@@ -23,3 +24,4 @@
   - [shell命令](./api/shell.md "shell命令")
 * [vue源码解析](./vue源码/vue1.md)
   - [双向绑定](./vue源码/vue1.md "双向绑定")
+
