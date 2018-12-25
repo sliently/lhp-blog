@@ -54,13 +54,19 @@ Object.defineProperty
 
 
 function a() {
-    return new aPromise(function (resolve, reject) {  
-            resolve(" 4329382")
+    return new aPromise(function (resolve, reject) {   
+        setTimeout(()=>{
+            console.log(1321)
+            resolve(132132)
+        },0)
+        
     })
 }
 (async () => {
     a().then(function (data) {
         console.log(data)
+    }, function (data) {
+        console.log(1,data)
     })
     console.log(12)
 })()

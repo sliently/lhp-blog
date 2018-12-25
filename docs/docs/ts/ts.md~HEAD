@@ -13,6 +13,13 @@ let a: string = "13123sada"
 let u: undefined = undefined;
 let n: null = null;
 ```
+##### 还能取像以下类型
+```js
+let a: HTMLElement
+let a: HTMLButtonElement
+let a: ()=>void
+```
+
 ##### 空值
 javascript中没有空值的概念，在typescript中用`void`表示没有任何返回值的函数
 ```ts
