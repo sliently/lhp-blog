@@ -1,0 +1,627 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>vue源码解析 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vue1.html" />
+    
+    
+    <link rel="prev" href="../api/shell.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    日常
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../201804/ajax.html">
+            
+                <a href="../201804/ajax.html">
+            
+                    
+                    ajax学习应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../201804/js继承.html">
+            
+                <a href="../201804/js继承.html">
+            
+                    
+                    js继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../js/整理.html">
+            
+                <a href="../js/整理.html">
+            
+                    
+                    js函数实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../掘金分享/lazyload.html">
+            
+                <a href="../掘金分享/lazyload.html">
+            
+                    
+                    图片懒加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../css/说明.html">
+            
+                <a href="../css/说明.html">
+            
+                    
+                    css
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../css/1.html">
+            
+                <a href="../css/1.html">
+            
+                    
+                    one
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    js
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../js/bind/bind.html">
+            
+                <a href="../js/bind/bind.html">
+            
+                    
+                    bind，call实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../js/排序/sort.html">
+            
+                <a href="../js/排序/sort.html">
+            
+                    
+                    排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    node
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../node/sequelize.html">
+            
+                <a href="../node/sequelize.html">
+            
+                    
+                    sequelize
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    面试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../面试/面试题.html">
+            
+                <a href="../面试/面试题.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../面试/面试.html">
+            
+                <a href="../面试/面试.html">
+            
+                    
+                    面试总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../react/study.html">
+            
+                <a href="../react/study.html">
+            
+                    
+                    react
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ts/ts.html">
+            
+                <a href="../ts/ts.html">
+            
+                    
+                    typescript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    api
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../api/git命令.html">
+            
+                <a href="../api/git命令.html">
+            
+                    
+                    git命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../api/linuxApi.html">
+            
+                <a href="../api/linuxApi.html">
+            
+                    
+                    linux命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../api/shell.html">
+            
+                <a href="../api/shell.html">
+            
+                    
+                    shell命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="vue1.html">
+            
+                <a href="vue1.html">
+            
+                    
+                    vue源码解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.9.1" data-path="vue1.html">
+            
+                <a href="vue1.html">
+            
+                    
+                    双向绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >vue源码解析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="vue&#x6E90;&#x7801;&#x89E3;&#x8BFB;">vue&#x6E90;&#x7801;&#x89E3;&#x8BFB;</h2>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">observe</span>(<span class="hljs-params">value, cb</span>) </span>{
+    <span class="hljs-built_in">Object</span>.keys(value).forEach((key) =&gt; defineReactive(value, key, value[key] , cb))
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">defineReactive</span> (<span class="hljs-params">obj,key,val,cb</span>)</span>{
+    <span class="hljs-built_in">Object</span>.defineProperty(obj, key ,{
+        get:()=&gt;{
+            <span class="hljs-comment">// &#x8BA2;&#x9605;</span>
+        },
+        set: ()=&gt;{
+            <span class="hljs-comment">// &#x89E6;&#x53D1;&#x8BA2;&#x9605;&#x8005;&#x7684;&#x56DE;&#x8C03;</span>
+            cb()
+        }
+    })
+}
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vue</span> </span>{
+    <span class="hljs-keyword">constructor</span>(options) {
+        <span class="hljs-keyword">this</span>._data = options.data;
+        observe(<span class="hljs-keyword">this</span>._data, options.render)
+    }
+}
+
+<span class="hljs-keyword">let</span> app = <span class="hljs-keyword">new</span> Vue({
+    el: <span class="hljs-string">&apos;#app&apos;</span>,
+    data: {
+        text: <span class="hljs-string">&apos;text&apos;</span>,
+        text2: <span class="hljs-string">&apos;text2&apos;</span>
+    },
+    render(){
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;render&quot;</span>);
+    }
+})
+
+<span class="hljs-comment">// &#x5C06;vue&#x4E2D;&#x5B9A;&#x4E49;&#x7684;data&#x6CE8;&#x518C;&#xFF0C;&#x53D8;&#x6210;&#x53EF;&#x89C2;&#x5BDF;&#x7684;</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x8BBF;&#x95EE;data&#x4E2D;&#x7684;&#x6570;&#x636E;&#x9700;&#x8981; app._data.text</p>
+<p>&#x5C31;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;</p>
+<pre><code class="lang-js">
+_proxy.call(<span class="hljs-keyword">this</span>,options.data)
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_proxy</span> (<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-keyword">const</span> that = <span class="hljs-keyword">this</span>;
+    <span class="hljs-built_in">Object</span>.keys(data).forEach(key =&gt; {
+        <span class="hljs-built_in">Object</span>.defineProperty(that, key, {
+            configurable: <span class="hljs-literal">true</span>,
+            enumerable: <span class="hljs-literal">true</span>,
+            get: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">proxyGetter</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-keyword">return</span> that._data[key];
+            },
+            set: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">proxySetter</span> (<span class="hljs-params">val</span>) </span>{
+                that._data[key] = val;
+            }
+        })
+    });
+}
+</code></pre>
+<p>&#x8FD9;&#x91CC; &#x5229;&#x7528;&#x4E86;<code>Object.defineProperty()</code>&#x65B9;&#x6CD5;,&#x5C06;&#x5C5E;&#x6027;&#x6620;&#x5C04;&#x4E3A;_data&#x4E0B;&#x9762;&#x7684;&#x5C5E;&#x6027;</p>
+<h4 id="&#x4F9D;&#x8D56;&#x6536;&#x96C6;">&#x4F9D;&#x8D56;&#x6536;&#x96C6;</h4>
+<pre><code class="lang-js">
+
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../api/shell.html" class="navigation navigation-prev " aria-label="Previous page: shell命令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vue1.html" class="navigation navigation-next " aria-label="Next page: 双向绑定">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+<<<<<<< HEAD
+            gitbook.page.hasChanged({"page":{"title":"vue源码解析","level":"1.8","depth":1,"next":{"title":"双向绑定","level":"1.8.1","depth":2,"path":"vue源码/vue1.md","ref":"./vue源码/vue1.md","articles":[]},"previous":{"title":"shell命令","level":"1.7.3","depth":2,"path":"api/shell.md","ref":"./api/shell.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vue源码/vue1.md","mtime":"2018-08-24T10:52:43.759Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-14T10:49:40.371Z"},"basePath":"..","book":{"language":""}});
+=======
+            gitbook.page.hasChanged({"page":{"title":"vue源码解析","level":"1.9","depth":1,"next":{"title":"双向绑定","level":"1.9.1","depth":2,"path":"vue源码/vue1.md","ref":"./vue源码/vue1.md","articles":[]},"previous":{"title":"shell命令","level":"1.8.3","depth":2,"path":"api/shell.md","ref":"./api/shell.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vue源码/vue1.md","mtime":"2018-08-21T11:31:03.792Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-15T05:14:07.024Z"},"basePath":"..","book":{"language":""}});
+>>>>>>> 整理
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

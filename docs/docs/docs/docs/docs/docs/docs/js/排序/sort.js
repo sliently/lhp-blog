@@ -30,6 +30,25 @@ function debounce(fn, time) {
     }
 }
 
+
+//插入排序
+function sort(arr) {
+    var arr = [5, 2, 4, 6, 1, 3],
+        len = arr.length, tmp;
+    for (let i = 1; i < len; i++) {
+        tmp = arr[i]
+        let j = i - 1
+        while (j >= 0 && tmp < arr[j]) {
+            arr[j + 1] = arr[j]
+            j--
+        }
+        arr[j + 1] = tmp;
+    }
+    return arr
+}
+
+
+
 function throttle(fn, timer) {
     var context
     var timer = null
@@ -40,7 +59,7 @@ function throttle(fn, timer) {
         if (!timer) {
             setTimeout(() => {
                 fn.apply(context, _argument)
-                timer=null
+                timer = null
             }, timer)
         }
     }
